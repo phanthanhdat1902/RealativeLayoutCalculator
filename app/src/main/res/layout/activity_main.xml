@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:text="0"
+        android:textSize="60dp"
+        android:gravity="center|right"
+        android:background="#cdc9c9">
+    </EditText>
+    <Button
+        android:id="@+id/MC"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:text="MC"
+        android:layout_below="@+id/editText1"
+        android:background="#cdc9c9">
+
+    </Button>
+    <Button
+        android:id="@+id/MR"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:text="MR"
+        android:layout_below="@+id/editText1"
+        android:layout_toRightOf="@+id/MC"
+        android:background="#cdc9c9">
+
+    </Button>
+    <Button
+        android:id="@+id/MPlus"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:text="M+"
+        android:layout_below="@+id/editText1"
+        android:layout_toRightOf="@+id/MR"
+        android:background="#cdc9c9">
+
+    </Button>
+    <Button
+        android:id="@+id/MTru"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:text="M-"
+        android:layout_below="@+id/editText1"
+        android:layout_toRightOf="@+id/MPlus"
+        android:background="#cdc9c9">
+
+    </Button>
+    <Button
+        android:id="@+id/MS"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:text="MS"
+        android:layout_below="@+id/editText1"
+        android:layout_toRightOf="@+id/MTru"
+        android:background="#cdc9c9">
+
+    </Button>
+    <Button
+        android:id="@+id/MEXP"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:text="M^"
+        android:layout_below="@+id/editText1"
+        android:layout_alignParentRight="true"
+        android:background="#cdc9c9">
+
+    </Button>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@+id/MTru"
+        android:layout_alignParentBottom="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_above="@+id/structCenter"
+            android:layout_alignParentTop="true">
+            <View android:id="@+id/strut"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_centerHorizontal="true"/>
+            <RelativeLayout
+                android:id="@+id/Layout1"
+                android:layout_width="0dp"
+                android:layout_height="90dp"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/strut"
+                android:background="#DDDDDD">
+                <View android:id="@+id/strut2"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_centerHorizontal="true"/>
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@+id/strut2"
+                    android:background="#DDDDDD"
+                    android:text="%"/>
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="-2dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_toRightOf="@+id/strut2"
+                    android:background="#DDDDDD"
+                    android:text="CE"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="90dp"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/strut">
+                <View android:id="@+id/strut1"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_centerHorizontal="true"/>
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@+id/strut1"
+                    android:background="#DDDDDD"
+                    android:text="C" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@+id/strut1"
+                    android:background="#DDDDDD"
+                    android:text="X" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/Layout3"
+                android:layout_width="0dp"
+                android:layout_height="90dp"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/strut"
+                android:layout_below="@id/Layout1"
+                android:background="#DDDDDD">
+                <View android:id="@+id/strut3"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_centerHorizontal="true"/>
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@+id/strut3"
+                    android:background="#DDDDDD"
+                    android:text="1/x"/>
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="-2dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_toRightOf="@+id/strut3"
+                    android:background="#DDDDDD"
+                    android:text="X^2"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/Layout2"
+                android:layout_width="0dp"
+                android:layout_height="90dp"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/strut"
+                android:layout_below="@id/Layout1">
+                <View android:id="@+id/strut4"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_centerHorizontal="true"/>
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@+id/strut4"
+                    android:background="#DDDDDD"
+                    android:text="\/2 x" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@+id/strut4"
+                    android:background="#DDDDDD"
+                    android:text="/" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/strut"
+                android:layout_below="@+id/Layout3"
+                android:layout_alignParentBottom="true"
+                android:background="#DDDDDD">
+                <View android:id="@+id/strut5"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_centerHorizontal="true"/>
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@+id/strut5"
+                    android:background="#fffafa"
+                    android:text="7"/>
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="-2dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_toRightOf="@+id/strut5"
+                    android:background="#fffafa"
+                    android:text="8"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/strut"
+                android:layout_below="@+id/Layout3"
+                android:layout_alignParentBottom="true"
+                android:background="#DDDDDD">
+                <View android:id="@+id/strut6"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_centerHorizontal="true"/>
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@+id/strut6"
+                    android:background="#fffafa"
+                    android:text="9"/>
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@+id/strut6"
+                    android:background="#DDDDDD"
+                    android:text="X"/>
+            </RelativeLayout>
+        </RelativeLayout>
+        <View
+            android:id="@+id/structCenter"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_centerInParent="true"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_below="@+id/structCenter"
+            android:layout_alignParentBottom="true">
+            <View android:id="@+id/strutt"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_centerHorizontal="true"/>
+            <RelativeLayout
+                android:id="@+id/Layout11"
+                android:layout_width="0dp"
+                android:layout_height="90dp"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/strutt"
+                android:background="#DDDDDD">
+                <View android:id="@+id/strut22"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_centerHorizontal="true"/>
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@+id/strut22"
+                    android:background="#fffafa"
+                    android:text="4"/>
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="-2dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_toRightOf="@+id/strut22"
+                    android:background="#fffafa"
+                    android:text="5" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="90dp"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/strutt">
+                <View android:id="@+id/strut11"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_centerHorizontal="true"/>
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@+id/strut11"
+                    android:background="#fffafa"
+                    android:text="6" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@+id/strut11"
+                    android:background="#DDDDDD"
+                    android:text="-" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/Layout33"
+                android:layout_width="0dp"
+                android:layout_height="90dp"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/strutt"
+                android:layout_below="@id/Layout11"
+                android:background="#DDDDDD">
+                <View android:id="@+id/strut33"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_centerHorizontal="true"/>
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@+id/strut33"
+                    android:background="#fffafa"
+                    android:text="1" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="-2dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_toRightOf="@+id/strut33"
+                    android:background="#fffafa"
+                    android:text="2" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/Layout22"
+                android:layout_width="0dp"
+                android:layout_height="90dp"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/strutt"
+                android:layout_below="@id/Layout11">
+                <View android:id="@+id/strut44"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_centerHorizontal="true"/>
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@+id/strut44"
+                    android:background="#fffafa"
+                    android:text="3" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@+id/strut44"
+                    android:background="#DDDDDD"
+                    android:text="+" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/strutt"
+                android:layout_below="@+id/Layout33"
+                android:layout_alignParentBottom="true"
+                android:background="#DDDDDD">
+                <View android:id="@+id/strut55"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_centerHorizontal="true"/>
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@+id/strut55"
+                    android:background="#fffafa"
+                    android:text="+/-" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="-2dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_toRightOf="@+id/strut55"
+                    android:background="#fffafa"
+                    android:text="0" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/strutt"
+                android:layout_below="@+id/Layout33"
+                android:layout_alignParentBottom="true"
+                android:background="#DDDDDD">
+                <View android:id="@+id/strut66"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_centerHorizontal="true"/>
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@+id/strut66"
+                    android:background="#fffafa"
+                    android:text="." />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@+id/strut66"
+                    android:background="#339999"
+                    android:text="=" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>
